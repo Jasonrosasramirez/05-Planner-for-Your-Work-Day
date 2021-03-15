@@ -5,9 +5,11 @@ body {
 }
 
 textarea{
+  height: 100%;
+  width: 100%;
   background: transparent;
   border: none;
-  resize: none;
+  resize: none; /* leaves the text box at a set vertical and horizontal dimensions. Cannot be clicked and dragged to be wider */
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
@@ -73,7 +75,7 @@ textarea{
   color: white;  
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
