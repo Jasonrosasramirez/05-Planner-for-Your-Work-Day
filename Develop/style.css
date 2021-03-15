@@ -5,7 +5,10 @@ body {
 }
 
 textarea{
+  /* added in height width*/  
+  height: 100%;
   width: 100%;
+
   background: transparent;
   border: none;
   resize: none; /* leaves the text box at a set vertical and horizontal dimensions. Cannot be clicked and dragged to be wider */
