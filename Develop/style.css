@@ -28,12 +28,16 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  
+  /* Borroed from row */ 
+  height: 80px;
+  border-top: 1px solid white;
 }
 
-.row {
+.row { /* I get an error when I use this Will keep for later */
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -78,8 +82,9 @@ textarea{
   justify-content: center;
 }
 
+
 #plannerTableID {
-  width: 70%;
+  width: 100%;
 
 }
 
