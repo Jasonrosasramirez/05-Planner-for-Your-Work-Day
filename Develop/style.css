@@ -5,7 +5,6 @@ body {
 }
 
 textarea{
-  height: 100%;
   width: 100%;
   background: transparent;
   border: none;
@@ -76,6 +75,7 @@ textarea{
 }
 
 .saveBtn:hover {
+  /* removed i from the hover above */ 
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
