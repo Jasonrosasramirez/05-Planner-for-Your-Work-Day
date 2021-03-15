@@ -78,3 +78,11 @@ textarea{
   justify-content: center;
 }
 
+#plannerTableID {
+  width: 70%;
+
+}
+
+#plannerTableHeaderID th {
+  border: 1px black solid;
+}
