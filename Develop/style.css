@@ -23,13 +23,14 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+  border: 2px green dotted;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
   
-  /* Borroed from row */ 
+  /* Borroed from .row */ 
   height: 80px;
   border-top: 1px solid white;
 }
@@ -40,10 +41,12 @@ textarea{
   border-top: 1px solid white;
 }
 
-.hour {
+.hour { 
+  width: 150px;
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 2px solid #64616169;
+  border-right: 2px solid #64616169;
 }
 
 .past {
@@ -62,11 +65,12 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  width: 100px;
+  border-left: 2px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
-  color: white;
+  color: white;  
 }
 
 .saveBtn i:hover {
@@ -85,7 +89,6 @@ textarea{
 
 #plannerTableID {
   width: 100%;
-
 }
 
 #plannerTableHeaderID th {
