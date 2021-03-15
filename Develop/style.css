@@ -69,3 +69,12 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+/* Below are the styles added in by Jason */
+
+.container {
+  border: 4px orange dashed;
+  display: flex;
+  justify-content: center;
+}
+
