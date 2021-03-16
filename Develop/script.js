@@ -21,8 +21,12 @@ var hourE1 = $(".hour");
 
 
 // var addingGreento8am = hourE1.first(); //so this turned the 8:00 am green
+//so the two lines below work 
 var row8E1 = $("#row8");
-row8E1.addClass("future");
+//row8E1.addClass("future");
+
+hour8amHeaderE1.children(".description").addClass("future"); 
+
 
 var testQuery = document.getElementById("row8").getAttribute("class");
 console.log(testQuery);
