@@ -1,4 +1,6 @@
+var tableBodyE1 = $(".tableBody");  //for traversing the table body to reference children
 var currentDayE1 = $("#currentDay");
+var timeBlockE1 = $(".time-block"); // The sections of each hour
 
 
 //displays the current date
@@ -8,3 +10,16 @@ function displayTime() {
 }
 
 setInterval(displayTime, 1000);
+
+
+
+
+//What i will be exp with 
+var hour8amHeaderE1 = $("#hour8amHeader");
+var descriptionE1 = $("description");
+var testE1 = $("#test");
+
+
+testE1.addClass("future");
+var testQuery = document.getElementById("test").getAttribute("class");
+console.log(testQuery);
