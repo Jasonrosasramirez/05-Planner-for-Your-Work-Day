@@ -83,6 +83,12 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+button {
+  height: 30px;
+  width: 30px;
+
+}
+
 /* Below are the styles added in by Jason */
 
 .container {

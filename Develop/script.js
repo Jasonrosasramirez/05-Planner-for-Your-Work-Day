@@ -1,7 +1,9 @@
 var currentDayE1 = $("#currentDay");
 
+
+//displays the current date
 function displayTime() {
-    var timeDateRightNow = moment().format("MMM DD, YYYY [at] hh:mm:ss a");
+    var timeDateRightNow = moment().format("MMM DD, YYYY | hh:mm:ss a"); // moment gathers time information .format sets the display
     currentDayE1.text(timeDateRightNow);
 }
 
