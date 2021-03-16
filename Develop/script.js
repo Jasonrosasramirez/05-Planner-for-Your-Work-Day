@@ -16,10 +16,14 @@ setInterval(displayTime, 1000);
 
 //What i will be exp with 
 var hour8amHeaderE1 = $("#hour8amHeader");
-var descriptionE1 = $("description");
-var testE1 = $("#test");
+
+var hourE1 = $(".hour");
 
 
-testE1.addClass("future");
-var testQuery = document.getElementById("test").getAttribute("class");
+// var addingGreento8am = hourE1.first(); //so this turned the 8:00 am green
+var row8E1 = $("#row8");
+row8E1.addClass("future");
+
+var testQuery = document.getElementById("row8").getAttribute("class");
 console.log(testQuery);
+console.log("using the git method " + row8E1.get());
