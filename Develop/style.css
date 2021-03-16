@@ -1,3 +1,10 @@
+:root {
+  --fullRowHeight: 80px;
+
+}
+
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -27,7 +34,7 @@ textarea{
 
 .description{
   white-space: pre-wrap;
-  border: 2px green dotted;
+  border: 2px green dotted; /* for decugging. Remove once done :) */ 
 }
 
 .time-block{
@@ -35,7 +42,7 @@ textarea{
   border-radius: 15px;
   
   /* Borroed from .row */ 
-  height: 80px;
+  height: var(--fullRowHeight);
   border-top: 1px solid white;
 }
 
@@ -69,6 +76,7 @@ textarea{
 }
 
 .saveBtn {
+  height: var(--fullRowHeight);
   width: 100px;
   border-left: 2px solid black;
   border-top-right-radius: 15px;
@@ -83,11 +91,10 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-button {
-  height: 30px;
-  width: 30px;
+.saveButtonCol {
+  width: 100px;
+} /* I need this here to keep the button column at 100px */ 
 
-}
 
 /* Below are the styles added in by Jason */
 
