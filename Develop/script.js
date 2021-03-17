@@ -22,14 +22,42 @@ function timeCheck() {
     //still haven't mastered DOM traversal yet. Experimenting with just the 8am time block. Plan to make more modular later on  
     var hour8amHeaderE1 = $("#hour8amHeader");
 
+    $(".saveBtn").on("click", function(){
+        var saveText = $(this).siblings(".description").val();  //use this when 
+        var hourBlock = $(this).parent().attr("id");
+
+        localStorage.setItem(hourBlock, saveText);
+    }
     
+    
+    )
 
 
+    function hourColorizer () {
+        var presentHour = moment().hours();
 
+        $(".time-block").each(function() {
+            var hourBlock = parseInt(($(this).attr("id").split("-")[1]))
+
+            if (hourBlock < presentHour) {
+                $(this).addClass("past");
+            }
+            else if(hourBlock === presentHour) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+            } else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+            }
+        })
+    }
+
+    hourColorizer();
 
     // if this happens in the future 
     // I now make the element green by adding the CSS class future 
-    hour8amHeaderE1.children(".description").addClass("future");
+    //hour8amHeaderE1.children(".description").addClass("future");
 
     // else if this happens in the past 
     // hour8amHeaderE1.children(".description").addClass("past"); // I now make the element white by adding the CSS class past
