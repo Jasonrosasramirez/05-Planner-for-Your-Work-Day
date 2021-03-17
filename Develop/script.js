@@ -27,17 +27,23 @@ function timeCheck() {
 
     var format = "hh:mm:ss";
     // var time = moment() gives you current time. no format required.
-    var time = moment('09:34:00', format);
-    var beforeTime = moment('07:00:00', format);
-    var afterTime = moment('09:00:00', format);
+    var time = moment("09:34:00", format);
+    var beforeTime = moment("07:00:00", format);
+    var beforeTimeCieling = moment("07:59:59", format);
+    var afterTime = moment("09:00:00", format);
+    var afterTimeCieling = moment("11:59:59", format);
 
-    if (time.isBetween(beforeTime, afterTime)) {
+    if (time.isBetween(beforeTime, beforeTimeCieling)) {
+        console.log("The time is before 8:00 am");
 
-        console.log('is between')
+    } 
+    else if (time.isBetween(afterTime, afterTimeCieling)) {
+        console.log("The time is after 8:00 am");
 
-    } else {
+    }
+    else {
 
-        console.log('is not between')
+        console.log('is not between');
 
     }
 
