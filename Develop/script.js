@@ -16,37 +16,13 @@ setInterval(displayTime, 1000);
 function timeCheck() {
     //Am I late or am I early? 
 
-    var timeCurrently_NoDate = moment().format("hh:mm:ss"); // moment gathers time information .format sets the display
-    console.log(timeCurrently_NoDate);
+    var timeCurrentlyNoDate = moment().format("hh:mm:ss"); // moment gathers time information .format sets the display
+    console.log(timeCurrentlyNoDate);
 
     //still haven't mastered DOM traversal yet. Experimenting with just the 8am time block. Plan to make more modular later on  
     var hour8amHeaderE1 = $("#hour8amHeader");
 
-// use moment() for these checks. Convert the time blocks to hh:mm:ss format
-
-    var format = "hh:mm:ss";
     
-
-    var beforeTime = moment("07:00:00", format);
-    var beforeTimeCieling = moment("07:59:59", format);
-    
-    var afterTime = moment("09:00:00", format);
-    var afterTimeCieling = moment("11:59:59", format);
-
-    if (timeCurrently_NoDate.isBetween(beforeTime, beforeTimeCieling)) {
-        console.log("The current time is before 8:00 am");
-
-    } 
-    else if (timeCurrently_NoDate.isBetween(afterTime, afterTimeCieling)) {
-        console.log("The current time is after 8:00 am");
-
-    }
-    else {
-
-        console.log('is not between');
-
-    }
-
 
 
 
