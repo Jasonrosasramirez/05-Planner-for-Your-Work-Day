@@ -55,25 +55,12 @@ function timeCheck() {
 
     hourColorizer();
 
-    // if this happens in the future 
-    // I now make the element green by adding the CSS class future 
-    //hour8amHeaderE1.children(".description").addClass("future");
-
-    // else if this happens in the past 
-    // hour8amHeaderE1.children(".description").addClass("past"); // I now make the element white by adding the CSS class past
-
-    // else 
-    //it's the present and it's red 
-    // hour8amHeaderE1.children(".description").addClass("present"); // I now make the element red by adding the CSS class present
 }
 
 setInterval(timeCheck, 1000);
 
 
-function storeMeLocally () {
-    //triggered by the save buttons per row
-    // will probably involve the .data() method 
-}
+$("#hour-9 .description").val(localStorage.getItem("hour-9")); 
 
 
 
