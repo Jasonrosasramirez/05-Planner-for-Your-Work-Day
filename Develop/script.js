@@ -19,26 +19,26 @@ function timeCheck() {
     var timeCurrently_NoDate = moment().format("hh:mm:ss"); // moment gathers time information .format sets the display
     console.log(timeCurrently_NoDate);
 
-
     //still haven't mastered DOM traversal yet. Experimenting with just the 8am time block. Plan to make more modular later on  
     var hour8amHeaderE1 = $("#hour8amHeader");
 
 // use moment() for these checks. Convert the time blocks to hh:mm:ss format
 
     var format = "hh:mm:ss";
-    // var time = moment() gives you current time. no format required.
-    var time = moment("09:34:00", format);
+    
+
     var beforeTime = moment("07:00:00", format);
     var beforeTimeCieling = moment("07:59:59", format);
+    
     var afterTime = moment("09:00:00", format);
     var afterTimeCieling = moment("11:59:59", format);
 
-    if (time.isBetween(beforeTime, beforeTimeCieling)) {
-        console.log("The time is before 8:00 am");
+    if (timeCurrently_NoDate.isBetween(beforeTime, beforeTimeCieling)) {
+        console.log("The current time is before 8:00 am");
 
     } 
-    else if (time.isBetween(afterTime, afterTimeCieling)) {
-        console.log("The time is after 8:00 am");
+    else if (timeCurrently_NoDate.isBetween(afterTime, afterTimeCieling)) {
+        console.log("The current time is after 8:00 am");
 
     }
     else {
@@ -52,13 +52,15 @@ function timeCheck() {
 
 
     // if this happens in the future 
-    hour8amHeaderE1.children(".description").addClass("future"); // I now make the element green by adding the CSS class future 
-    
+    // I now make the element green by adding the CSS class future 
+    hour8amHeaderE1.children(".description").addClass("future");
+
     // else if this happens in the past 
     // hour8amHeaderE1.children(".description").addClass("past"); // I now make the element white by adding the CSS class past
 
     // else 
     //it's the present and it's red 
+    // hour8amHeaderE1.children(".description").addClass("present"); // I now make the element red by adding the CSS class present
 }
 
 setInterval(timeCheck, 1000);
