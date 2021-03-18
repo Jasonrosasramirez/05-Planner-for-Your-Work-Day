@@ -32,7 +32,7 @@ textarea{
 }
 
 .time-block{
-  width: 1200px;
+  width: 800px;
   text-align: center;
   border-radius: 15px;
 }
@@ -89,8 +89,11 @@ textarea{
 
 .container {
   border: 4px orange dashed;
+  padding: 15px 0px 15px 0px;
+
   display: flex;
   justify-content: center;
+
 }
 
 .time-block {
