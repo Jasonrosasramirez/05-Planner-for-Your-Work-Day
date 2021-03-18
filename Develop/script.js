@@ -10,46 +10,41 @@ function displayTime() {
     currentDayE1.text(timeDateRightNow); // the text of the currentDayE1 id tag will update with the actual time & date
 }
 
-//setInterval(displayTime, 1000);
+function hourColorizer () {
+    var presentHour = moment().hours();
 
+    $(".time-block").each(function() {
+        var hourBlock = parseInt(($(this).attr("id").split("-")[1]))
+
+        if (hourBlock < presentHour) {
+            $(this).addClass("past");
+        }
+        else if(hourBlock === presentHour) {
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        } else {
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        }
+    })
+}
 
 function timeCheckMain () {
-    //Am I late or am I early? 
+    // Everything within this function gets called once per second 
 
     displayTime();
-    
+    hourColorizer();
 
     $(".saveBtn").on("click", function(){
         var saveText = $(this).siblings(".description").val();  //use this when 
         var hourBlock = $(this).parent().attr("id");
 
         localStorage.setItem(hourBlock, saveText);
-    }
-    )
-
-    function hourColorizer () {
-        var presentHour = moment().hours();
-
-        $(".time-block").each(function() {
-            var hourBlock = parseInt(($(this).attr("id").split("-")[1]))
-
-            if (hourBlock < presentHour) {
-                $(this).addClass("past");
-            }
-            else if(hourBlock === presentHour) {
-                $(this).removeClass("past");
-                $(this).addClass("present");
-            } else {
-                $(this).removeClass("past");
-                $(this).removeClass("present");
-                $(this).addClass("future");
-            }
-        })
-    }
-
-    hourColorizer();
+    })
 
 }
+
 
 setInterval(timeCheckMain, 1000);
 
