@@ -10,13 +10,13 @@ function displayTime() {
     currentDayE1.text(timeDateRightNow); // the text of the currentDayE1 id tag will update with the actual time & date
 }
 
-setInterval(displayTime, 1000);
+//setInterval(displayTime, 1000);
 
 
-function timeCheck() {
+function timeCheckMain () {
     //Am I late or am I early? 
 
-    var timeCurrentlyNoDate = moment().format("hh:mm:ss"); // moment gathers time information .format sets the display
+    displayTime();
     
 
     $(".saveBtn").on("click", function(){
@@ -51,7 +51,7 @@ function timeCheck() {
 
 }
 
-setInterval(timeCheck, 1000);
+setInterval(timeCheckMain, 1000);
 
 
 $("#hour-9 .description").val(localStorage.getItem("hour-9")); 
