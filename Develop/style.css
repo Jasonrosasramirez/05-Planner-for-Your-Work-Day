@@ -26,6 +26,7 @@ textarea{
 }
 
 .description{
+  width: 300px;
   white-space: pre-wrap;
   border: 2px green dotted; /* for decugging. Remove once done :) */ 
 }
