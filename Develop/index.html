@@ -43,12 +43,6 @@
 
 
 
-
-
-
-
-
-
       <table id = "plannerTableID"> <!-- The entire table -->
         <thead> <!-- table header -->
           <tr id = "plannerTableHeaderID"> <!-- table header display-->
@@ -62,14 +56,23 @@
           <tr id = "hour8amHeader" class ="time-block"> <!-- table header display-->
             <th class="hour">8:00am</th> 
             <th class="description"> <textarea placeholder="type in this project square"> </textarea> </th>
-            <th > <button class="saveBtn"> <i class="far fa-save"></i> </button> </th>
+            <th> <button class="saveBtn"> <i class="far fa-save"></i> </button> </th>
           </tr>
-          
-          <tr id = "hour-9" class ="time-block"> 
+
+          <div id = "hour-9" class = "row time-block">
+            <div class = "col-md-1"> 9AM </div>
+            <textarea class = "col-md-10 description"> </textarea>
+            <th> <button class="saveBtn"> <i class="far fa-save"></i> </button> </th>
+          </div> 
+
+          <!-- 
+            <tr id = "hour-9" class ="time-block"> 
             <th class="hour">9:00am</th>
             <th class="description"> <textarea placeholder="type in this project square"> </textarea> </th>
             <th> <button class="saveBtn"> <i class="far fa-save"></i> </button> </th>
           </tr>
+          -->
+          
 
           <tr id = "hour10amHeader" class = "time-block"> 
             <th class="hour">10:00am</th>

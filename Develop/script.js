@@ -19,8 +19,6 @@ function timeCheck() {
     var timeCurrentlyNoDate = moment().format("hh:mm:ss"); // moment gathers time information .format sets the display
     console.log(timeCurrentlyNoDate);
 
-    //still haven't mastered DOM traversal yet. Experimenting with just the 8am time block. Plan to make more modular later on  
-    var hour8amHeaderE1 = $("#hour8amHeader");
 
     $(".saveBtn").on("click", function(){
         var saveText = $(this).siblings(".description").val();  //use this when 
@@ -31,8 +29,6 @@ function timeCheck() {
     
     
     )
-
-
     function hourColorizer () {
         var presentHour = moment().hours();
 

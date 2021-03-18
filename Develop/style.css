@@ -89,9 +89,7 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.saveButtonCol {
-  width: 100px;
-} /* I need this here to keep the button column at 100px */ 
+
 
 
 /* Below are the styles added in by Jason */
