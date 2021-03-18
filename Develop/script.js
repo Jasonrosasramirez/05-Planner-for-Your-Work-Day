@@ -17,8 +17,7 @@ function timeCheck() {
     //Am I late or am I early? 
 
     var timeCurrentlyNoDate = moment().format("hh:mm:ss"); // moment gathers time information .format sets the display
-    console.log(timeCurrentlyNoDate);
-
+    
 
     $(".saveBtn").on("click", function(){
         var saveText = $(this).siblings(".description").val();  //use this when 
@@ -26,9 +25,8 @@ function timeCheck() {
 
         localStorage.setItem(hourBlock, saveText);
     }
-    
-    
     )
+
     function hourColorizer () {
         var presentHour = moment().hours();
 
@@ -57,6 +55,7 @@ setInterval(timeCheck, 1000);
 
 
 $("#hour-9 .description").val(localStorage.getItem("hour-9")); 
+$("#hour-10 .description").val(localStorage.getItem("hour-10")); 
 
 
 

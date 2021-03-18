@@ -2,18 +2,18 @@
   --fullRowHeight: 80px;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
 }
 
 textarea{
@@ -88,11 +88,7 @@ textarea{
 /* Below are the styles added in by Jason  |  Debug me */
 
 .container {
-  border: 4px orange dashed;
-  padding: 15px 0px 15px 0px;
-
-  display: flex;
-  justify-content: center;
+  border: orange dashed 2px;
 
 }
 
