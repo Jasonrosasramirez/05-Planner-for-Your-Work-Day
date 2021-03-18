@@ -27,8 +27,7 @@ textarea{
 
 .description{
   width: 300px;
-  white-space: pre-wrap;
-  border: 2px green dotted; /* for decugging. Remove once done :) */ 
+  white-space: pre-wrap; 
 }
 
 .time-block{
@@ -83,23 +82,3 @@ textarea{
 }
 
 
-
-
-/* Below are the styles added in by Jason  |  Debug me */
-
-.container {
-  border: orange dashed 2px;
-
-}
-
-.time-block {
-  border: 3px purple solid;
-}
-
-.col-md-1 {
-  border: 2px teal dashed;
-}
-
-.saveBtn {
-  border: 4px red dotted;
-}
