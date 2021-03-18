@@ -2,6 +2,13 @@
   --fullRowHeight: 80px;
 }
 
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -10,21 +17,12 @@ body {
 }
 
 textarea{
-
   background: transparent;
   border: none;
   resize: none; /* leaves the text box at a set vertical and horizontal dimensions. Cannot be clicked and dragged to be wider */
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-}
-
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
 .description{
@@ -103,5 +101,5 @@ textarea{
 }
 
 .saveBtn {
-  border: 4px orange dotted;
+  border: 4px red dotted;
 }
