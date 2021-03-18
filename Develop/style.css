@@ -10,9 +10,6 @@ body {
 }
 
 textarea{
-  /* added in height width*/  
-  height: 100%;
-  width: 100%;
 
   background: transparent;
   border: none;
@@ -38,10 +35,6 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
-  
-  /* Borroed from .row */ 
-  height: var(--fullRowHeight);
-  border-top: 1px solid white;
 }
 
 .row { /* I get an error when I use this Will keep for later */
@@ -100,11 +93,3 @@ textarea{
   justify-content: center;
 }
 
-
-#plannerTableID {
-  width: 100%;
-}
-
-#plannerTableHeaderID th {
-  border: 1px black solid;
-}
