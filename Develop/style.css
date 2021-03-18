@@ -33,6 +33,7 @@ textarea{
 }
 
 .time-block{
+  width: 1200px;
   text-align: center;
   border-radius: 15px;
 }
@@ -85,7 +86,7 @@ textarea{
 
 
 
-/* Below are the styles added in by Jason */
+/* Below are the styles added in by Jason  |  Debug me */
 
 .container {
   border: 4px orange dashed;
@@ -93,3 +94,14 @@ textarea{
   justify-content: center;
 }
 
+.time-block {
+  border: 3px purple solid;
+}
+
+.col-md-1 {
+  border: 2px teal dashed;
+}
+
+.saveBtn {
+  border: 4px orange dotted;
+}
